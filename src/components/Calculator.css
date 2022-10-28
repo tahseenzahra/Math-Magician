@@ -1,0 +1,33 @@
+.bgOrange {
+  background-color: orange;
+}
+
+.bgLGrey {
+  background-color: lightgrey;
+}
+
+.grid {
+  background-color: aliceblue;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-areas: 
+  "a a a a"
+  "b c d e"
+  "f g h i"
+  "j k l m"
+  "n o p q"
+  "r r s t"; */
+  gap: 1px;
+}
+
+#a {
+  grid-column: 1 / -1;
+  background-color: gray;
+  text-align: right;
+  padding: 5px;
+}
+
+#r {
+  grid-column: 1 / 3;
+}

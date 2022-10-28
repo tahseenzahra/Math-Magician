@@ -24,3 +24,7 @@
 #r {
   grid-column: 1 / 3;
 }
+
+button {
+  border: none;
+}

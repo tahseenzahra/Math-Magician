@@ -1,11 +1,7 @@
 import React from 'react';
 import './Calculator.css';
 
-export class Calculator extends React.PureComponent {
-  // constructor(props) {
-  //   super(props);
-  // }
-
+class Calculator extends React.PureComponent {
   render() {
     return (
       <section className="grid">

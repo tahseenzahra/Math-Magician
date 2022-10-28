@@ -1,15 +1,16 @@
 import React from 'react';
-import './components/Calculator.js';
-import Calculator from './components/Calculator.js'; 
+import Calculator from './components/Calculator';
 
 class App extends React.PureComponent {
   render() {
     return (
-      <div className='App'>
-        <header className='AppHeader'> 
-          <Calculator />
-        </header>
-      </div>
+      <React.StrictMode>
+        <div className="App">
+          <header className="AppHeader">
+            <Calculator />
+          </header>
+        </div>
+      </React.StrictMode>
     );
   }
 }

@@ -17,6 +17,11 @@
   margin: auto;
 }
 
+.grid > div,
+button {
+  font-size: 20px;
+}
+
 #a {
   grid-column: 1 / -1;
   color: white;
@@ -25,10 +30,20 @@
   padding: 5px;
 }
 
+.answerDisplay {
+  padding-top: 11%;
+}
+
 #r {
   grid-column: 1 / 3;
 }
 
 button {
   border: none;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translate(2px, -2px);
+  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.3);
 }

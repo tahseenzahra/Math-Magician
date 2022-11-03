@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  margin-top: 50px;
+  padding: 0 24px;
+}
+
+.para {
+  font-size: 18px;
+}
+
+.para p {
+  padding-top: 25px;
+}

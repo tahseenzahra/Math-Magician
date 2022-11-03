@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.quote {
+  margin-top: 50px;
+  padding: 10% 30%;
+  font-size: 20px;
+}
+
+blockquote {
+  text-indent: -0.45em;
+  hanging-punctuation: first;
+  quotes: "“" "”" "‘" "’";
+}
+
+blockquote::before {
+  content: open-quote;
+}
+
+blockquote::after {
+  content: close-quote;
+}

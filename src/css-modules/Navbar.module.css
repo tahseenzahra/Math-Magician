@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex,
+.navlist {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex {
+  padding: 5px 24px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: orange;
+}
+
+.navlist {
+  /* margin-left: 100%; */
+  gap: 10px;
+  font-size: 20px;
+}
+
+.navlist li {
+  list-style: none;
+}
+
+.navLink {
+  text-decoration: none;
+  color: gray;
+}
+
+.navLink:hover {
+  color: orange;
+}

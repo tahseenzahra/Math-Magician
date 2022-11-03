@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.calculate {
+  margin-top: 50px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .bgOrange {
   background-color: orange;
 }
@@ -14,7 +26,6 @@
   gap: 1px;
   width: 50%;
   height: 100vh;
-  margin: auto;
 }
 
 .grid > div,

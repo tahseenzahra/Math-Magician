@@ -1,43 +1,21 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Calculator from './components/Calculator';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 import Navbar from './components/Navbar';
+import Quote from './components/Quote';
+import Home from './components/Home';
 
-class App extends React.PureComponent {
-  render() {
-    return (
-      <Router>
-        <div>
-          <div>
-            <Navbar />
-          </div>
-          <Switch>
-          <Route path="/">
-              <Home />
-            </Route>
-            <Route exact path="/calculator">
-              <Calculator />
-            </Route>
-            <Route exact path="/quote">
-              <Quote />
-            </Route>
-          </Switch>
-        </div>
-      </Router>
-      // <React.StrictMode>
-      //   <div className="App">
-      //     <header className="AppHeader">
-      //       <Calculator />
-      //     </header>
-      //   </div>
-      // </React.StrictMode>
-    );
-  }
+function App() {
+  return (
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route exact path="/Calculator" element={<Calculator />} />
+        <Route exact path="/Quote" element={<Quote />} />
+      </Routes>
+    </>
+  );
 }
 
 export default App;

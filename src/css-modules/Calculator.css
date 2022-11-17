@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.calculate {
+  margin-top: 50px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bgOrange {
+  background-color: orange;
+}
+
+.bgLGrey {
+  background-color: lightgrey;
+}
+
+.grid {
+  background-color: aliceblue;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  width: 50%;
+  height: 100vh;
+}
+
+.grid > div,
+button {
+  font-size: 20px;
+}
+
+#a {
+  grid-column: 1 / -1;
+  color: white;
+  background-color: gray;
+  text-align: right;
+  padding: 5px;
+}
+
+.answerDisplay {
+  padding-top: 11%;
+}
+
+#r {
+  grid-column: 1 / 3;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translate(2px, -2px);
+  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.3);
+}
